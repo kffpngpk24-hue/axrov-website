@@ -1,0 +1,218 @@
+/* Portfolio Grid */
+.portfolio-section {
+    padding: 60px 20px;
+}
+
+.portfolio-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    border: 2px solid var(--border-color);
+    background: transparent;
+    color: var(--dark-text);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--light-green);
+    color: var(--white);
+    border-color: var(--light-green);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.portfolio-item {
+    animation: fadeInUp 0.5s ease;
+}
+
+.portfolio-card {
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.portfolio-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(45, 106, 79, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-overlay p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.view-project {
+    display: inline-block;
+    padding: 8px 24px;
+    background-color: var(--light-green);
+    color: var(--white);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.view-project:hover {
+    background-color: var(--white);
+    color: var(--primary-dark-green);
+}
+
+.portfolio-info {
+    padding: 1.5rem;
+}
+
+.portfolio-info h4 {
+    color: var(--primary-dark-green);
+    margin-bottom: 0.5rem;
+}
+
+.project-category {
+    color: var(--grey-text);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.project-tag {
+    display: inline-block;
+    background-color: var(--light-grey);
+    color: var(--accent-green);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Case Studies */
+.case-studies-section {
+    padding: 80px 20px;
+    background-color: var(--light-grey);
+}
+
+.case-studies-section h2 {
+    text-align: center;
+    color: var(--primary-dark-green);
+    margin-bottom: 3rem;
+}
+
+.case-study-item {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--light-green);
+}
+
+.study-content h3 {
+    color: var(--primary-dark-green);
+    margin-bottom: 0.5rem;
+}
+
+.study-subtitle {
+    color: var(--light-green);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.case-study-item p {
+    color: var(--grey-text);
+    margin-bottom: 2rem;
+}
+
+.study-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.study-metrics div {
+    text-align: center;
+}
+
+.study-metrics strong {
+    display: block;
+    color: var(--light-green);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.study-metrics span {
+    color: var(--grey-text);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-item {
+        padding: 2rem;
+    }
+
+    .study-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

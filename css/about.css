@@ -1,0 +1,288 @@
+/* Story Section */
+.story-section {
+    padding: 80px 20px;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.story-text h2 {
+    color: var(--primary-dark-green);
+    margin-bottom: 2rem;
+}
+
+.story-text p {
+    color: var(--grey-text);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.story-image {
+    min-height: 400px;
+}
+
+.story-image .placeholder-image {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--light-grey) 0%, #f0f0f0 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--accent-green);
+    box-shadow: var(--shadow-md);
+}
+
+/* Mission & Vision */
+.mission-vision-section {
+    padding: 80px 20px;
+    background-color: var(--light-grey);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.mission-card,
+.vision-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.mission-card i,
+.vision-card i {
+    font-size: 3rem;
+    color: var(--light-green);
+    margin-bottom: 1.5rem;
+}
+
+.mission-card h3,
+.vision-card h3 {
+    color: var(--primary-dark-green);
+    margin-bottom: 1rem;
+}
+
+.mission-card p,
+.vision-card p {
+    color: var(--grey-text);
+    line-height: 1.8;
+}
+
+/* Values Section */
+.values-section {
+    padding: 80px 20px;
+}
+
+.values-section h2 {
+    text-align: center;
+    color: var(--primary-dark-green);
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--light-green);
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+    border-top-color: var(--accent-green);
+}
+
+.value-card i {
+    font-size: 2.5rem;
+    color: var(--light-green);
+    margin-bottom: 1rem;
+}
+
+.value-card h4 {
+    color: var(--primary-dark-green);
+    margin-bottom: 0.8rem;
+}
+
+.value-card p {
+    color: var(--grey-text);
+    font-size: 0.95rem;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 20px;
+    background-color: var(--light-grey);
+}
+
+.team-section h2 {
+    text-align: center;
+    color: var(--primary-dark-green);
+    margin-bottom: 1rem;
+}
+
+.team-intro {
+    text-align: center;
+    color: var(--grey-text);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+}
+
+.member-image {
+    overflow: hidden;
+    height: 250px;
+    background: linear-gradient(135deg, var(--light-grey) 0%, #f0f0f0 100%);
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.team-member h4 {
+    color: var(--primary-dark-green);
+    padding: 1.5rem 1.5rem 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: var(--grey-text);
+    padding: 0 1.5rem 1.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Achievements Section */
+.achievements-section {
+    padding: 80px 20px;
+}
+
+.achievements-section h2 {
+    text-align: center;
+    color: var(--primary-dark-green);
+    margin-bottom: 3rem;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.achievement {
+    background: var(--light-grey);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.achievement:hover {
+    background-color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.achievement i {
+    font-size: 3rem;
+    color: var(--light-green);
+    margin-bottom: 1rem;
+}
+
+.achievement h4 {
+    color: var(--primary-dark-green);
+    margin-bottom: 0.5rem;
+}
+
+.achievement p {
+    color: var(--grey-text);
+    font-size: 0.95rem;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--primary-dark-green) 0%, var(--primary-green) 100%);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    color: var(--white);
+}
+
+.stat-number {
+    font-size: 3rem;
+    color: var(--light-green);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .story-content,
+    .mission-vision-section {
+        grid-template-columns: 1fr;
+    }
+
+    .story-image,
+    .story-text {
+        min-height: auto;
+    }
+}
